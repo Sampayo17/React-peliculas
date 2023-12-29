@@ -1,5 +1,5 @@
 import { ReactElement } from "react"
-import Cargando from "../Cargando";
+import Cargando from "../peliculas/Cargando";
 
 export default function ListadoGenerico(props: listadoGenericoProps) {
     if (!props.listado) {

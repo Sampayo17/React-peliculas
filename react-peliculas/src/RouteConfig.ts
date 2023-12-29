@@ -14,7 +14,7 @@ import UpdateCine from "./Cines/UpdateCine";
 import CreatePelicula from "./peliculas/CreatePelicula";
 import UpdatePelicula from "./peliculas/UpdatePelicula";
 import SearchPelicula from "./peliculas/SearchPeliculas";
-import ReturnToLanding from "./peliculas/utils/ReturnToLanding";
+import ReturnToLanding from "./utils/ReturnToLanding";
 
 const rutas = [
     {path: '/generos/create', componente: CreateGenero},

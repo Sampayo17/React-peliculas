@@ -1,13 +1,20 @@
-import { useParams } from "react-router-dom"
+//import { useParams } from "react-router-dom"
+
+import FormularioGenero from "./FormularioGenero";
 
 export default function UpdateGenero() {
 
-    const { id }: any = useParams();
+   // const { id }: any = useParams();
     return (
         <>
             <h3>Editar Genero</h3>
-            <h4>El Id obtenido de la url es: {id}</h4>
-
+            
+            <FormularioGenero modelo={{ nombre: 'Accion' }}
+                onSubmit={async valores => {
+                    await new Promise(r => setTimeout(r, 100))
+                    console.log(valores);
+                }}
+            />
         </>
     )
 }
