@@ -34,7 +34,7 @@ function App() {
 }
 
 export default App;
-function Useeffect(arg0: () => () => void) {
+/*function Useeffect(arg0: () => () => void) {
   throw new Error('Function not implemented.');
-}
+}*/
 

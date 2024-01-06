@@ -1,4 +1,4 @@
-import { toBeEmptyDOMElement } from '@testing-library/jest-dom/matchers';
+//import { toBeEmptyDOMElement } from '@testing-library/jest-dom/matchers';
 import * as Yup from 'yup'
 
 export default function configurarValidaciones() {
@@ -17,7 +17,7 @@ export default function configurarValidaciones() {
     Yup.addMethod(Yup.string, 'stringEmpty', function () {
         return this.test('string-empty', 'El campo esta vacio',
             function (valor) {
-                if (valor == " ") {
+                if (valor === " ") {
 
                     console.log("valor" + valor);
                     return false;
